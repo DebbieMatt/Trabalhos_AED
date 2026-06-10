@@ -1,0 +1,60 @@
+Com base nos códigos dos algoritmos de ordenação (Bubble Sort, Selection Sort, Insertion Sort, Heap Sort e Quick Sort), vamos abordar os pontos solicitados:
+
+### 1. Implementação dos Algoritmos
+
+Os algoritmos foram implementados em linguagem C, com métricas de desempenho incluídas para medir tempo de execução, número de comparações e trocas. O código completo foi fornecido para cada algoritmo.
+
+### 2. Tabelas Comparativas com as Métricas
+
+Tabelas com os dados obtidos durante a execução dos algoritmos:
+
+| Algoritmo       | Base de Dados | Tempo de Execução (s) | Comparações  | Trocas  |
+|-----------------|----------------|------------------------|--------------|---------|
+| Bubble Sort     | Base 1 (100)   | 0.000021 segundos      | 4950         | 2646    |
+| Bubble Sort     | Base 2 (1000)  | 0.001968 segundos      | 499500       | 499500  |
+| Bubble Sort     | Base 3 (10000) | 0.119882 segundos      | 49995000     | 12376116|
+|-----------------|----------------|------------------------|--------------|---------|
+| Selection Sort  | Base 1 (100)   | 0.000010 segundos      | 4950         | 0       |
+| Selection Sort  | Base 2 (1000)  | 0.000896 segundos      | 499500       | 0       |
+| Selection Sort  | Base 3 (10000) | 0.082148 segundos      | 49995000     | 0       |
+|-----------------|----------------|------------------------|--------------|---------|
+| Insertion Sort  | Base 1 (100)   | 0.000003 segundos      | 99           | 0       |
+| Insertion Sort  | Base 2 (1000)  | 0.000005 segundos      | 999          | 0       |
+| Insertion Sort  | Base 3 (10000) | 0.000084 segundos      | 9999         | 0       |
+|-----------------|----------------|------------------------|--------------|---------|
+| Merge Sort      | Base 1 (100)   | 0.000015 segundos      | 356          | 0       |
+| Merge Sort      | Base 2 (1000)  | 0.000131 segundos      | 5044         | 0       |
+| Merge Sort      | Base 3 (10000) | 0.001001 segundos      | 69008        | 0       |
+|-----------------|----------------|------------------------|--------------|---------|
+| Heap Sort       | Base 1 (100)   | 0.000011 segundos      | 1362         | 631     |
+| Heap Sort       | Base 2 (1000)  | 0.000137 segundos      | 20418        | 9709    |
+| Heap Sort       | Base 3 (10000) | 0.001570 segundos      | 272382       | 131191  |
+|-----------------|----------------|------------------------|--------------|---------|
+| Quick Sort      | Base 1 (100)   | 0.000017 segundos      | 3108         | 3133    |
+| Quick Sort      | Base 2 (1000)  | 0.002548 segundos      | 499500       | 500499  |
+| Quick Sort      | Base 3 (10000) | 0.132718 segundos      | 33791341     | 33795122|
+|-----------------|----------------|------------------------|--------------|---------|
+
+### 3. Gráficos de Comparação
+
+Os gráficos podem mostrar:
+- Tempo de execução vs. Tamanho do vetor.
+- Número de comparações vs. Tamanho do vetor.
+- Número de trocas vs. Tamanho do vetor.
+
+### 4. Discussão dos Resultados
+
+Aqui estão algumas observações baseadas nas métricas:
+- **Bubble Sort**: Funciona melhor com pequenos conjuntos de dados. É ineficiente para grandes bases devido à alta complexidade de tempo \(O(n^2)\).
+- **Selection Sort**: Similar ao Bubble Sort, tem complexidade de \(O(n^2)\) e é ineficiente para grandes conjuntos.
+- **Insertion Sort**: Melhora para conjuntos quase ordenados, mas ainda \(O(n^2)\) em média.
+- **Heap Sort**: Tem complexidade \(O(n \log n)\), o que o torna mais eficiente para grandes conjuntos comparado aos anteriores.
+- **Quick Sort**: Geralmente o mais rápido com complexidade média de \(O(n \log n)\), mas pode ser \(O(n^2)\) no pior caso sem otimizações como a escolha do pivô.
+
+### 5. Análise das Vantagens e Desvantagens
+
+- **Bubble Sort**: Simples de implementar, mas ineficiente para grandes dados.
+- **Selection Sort**: Fácil de entender, mas similarmente ineficiente.
+- **Insertion Sort**: Bom para pequenas ou quase ordenadas bases de dados.
+- **Heap Sort**: Eficiente para grandes conjuntos, mas mais complexo de implementar.
+- **Quick Sort**: Rápido e eficiente na média, mas pode ser problemático no pior caso sem otimizações.

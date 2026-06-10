@@ -1,0 +1,14 @@
+Paciente: Camila
+Idade: 32
+Medico: Pedro
+Especialidade: Cardio
+Motivo: calor
+Prioridade: 1
+
+Paciente: Camila
+Idade: 32
+Medico: Pedro
+Especialidade: Cardio
+Motivo: doenca
+Prioridade: 2
+
